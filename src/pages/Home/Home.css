@@ -94,7 +94,7 @@
   text-align: right;
 }
 
-.table-layout:last-child {
+.crypto-table-layout:last-child {
   border: none;
 }
 
@@ -114,4 +114,26 @@
 
 .red-color {
   color: #ff4646;
+}
+
+@media (max-width: 768px) {
+  .crypto-table-layout {
+    grid-template-columns: 0.5fr 3fr 1fr 1fr;
+  }
+
+  .table-market-cap {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .table-coin-image {
+    width: 2.5rem;
+  }
+  .crypto-table-layout {
+    font-size: 1.2rem;
+  }
+  .crypto-search-input {
+    width: 10rem;
+  }
 }

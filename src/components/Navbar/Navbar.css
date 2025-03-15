@@ -67,3 +67,31 @@
 .nav-arrow-icon {
   width: 13px;
 }
+
+/* Media Queries for Responsive Design */
+
+@media (max-width: 900px) {
+  .navbar {
+    padding: 2rem 8%;
+  }
+
+  .nav-login-button {
+    gap: 8px;
+    padding: 8px 1.8rem;
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 2rem 5%;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+  .nav-arrow-icon {
+    width: 1.2rem;
+  }
+}
