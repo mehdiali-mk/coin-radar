@@ -25,14 +25,34 @@
 
 ## 📸 Screenshots
 
-![CoinRadar UI Macbook Website View](./src/assets/Macbook-Image.png)
-_MacBook Website View_
-![CoinRadar UI Fold Website View](./src/assets/Fold-Image.png)
-_Fold Website View_
-![CoinRadar UI Ipad Website View](./src/assets/Ipad-Image.png)
-_Ipad Website View_
-![CoinRadar UI Iphone Website View](./src/assets/Iphone-Image.png)
-_Iphone Website View_
+### 🔹 MacBook Website View
+
+<p align="center">
+  <img src="./src/assets/Macbook-Image.png" width="60%">
+</p>
+
+<p align="center"><i>MacBook Website View</i></p>
+
+### 🔹 Fold Website View
+
+<p align="center">
+  <img src="./src/assets/Fold-Image.png" width="60%">
+</p>
+<p align="center"><i>Fold Website View</i></p>
+
+### 🔹 iPad Website View
+
+<p align="center">
+  <img src="./src/assets/Ipad-Image.png" width="60%">
+</p>
+<p align="center"><i>iPad Website View</i></p>
+
+### 🔹 iPhone Website View
+
+<p align="center">
+  <img src="./src/assets/Iphone-Image.png" width="60%">
+</p>
+<p align="center"><i>iPhone Website View</i></p>
 
 ## 🚀 Installation & Setup
 
