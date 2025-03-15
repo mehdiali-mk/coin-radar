@@ -1,12 +1,46 @@
-# React + Vite
+# 🚀 CoinRadar - Cryptocurrency Search Engine
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen)](https://coin-radar-chi.vercel.app/)
 
-Currently, two official plugins are available:
+**CoinRadar** is a powerful cryptocurrency search engine that provides real-time cryptocurrency rates and historical price charts. With an intuitive interface, users can easily search, track, and analyze their favorite cryptocurrencies.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🌟 Features
 
-## Expanding the ESLint configuration
+✅ **Live Cryptocurrency Prices** – Get real-time rates of various cryptocurrencies.  
+✅ **Historical Price Charts** – View the previous day's price trends.  
+✅ **Search Functionality** – Quickly find any cryptocurrency.  
+✅ **User-Friendly Interface** – Simple and clean UI for seamless navigation.  
+✅ **Fast & Reliable** – Uses efficient APIs to fetch accurate data.
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🔗 Live Demo
+
+👉 **[Try CoinRadar Now](https://coin-radar-chi.vercel.app/)**
+
+## 🛠️ Tech Stack
+
+- **Frontend:** React.js, Tailwind CSS
+- **Backend:** Node.js (if applicable)
+- **API:** CoinGecko / Binance API (or the API you’re using)
+- **Deployment:** Vercel
+
+## 📸 Screenshots
+
+_Include some screenshots of the app to showcase its UI._
+
+## 🚀 Installation & Setup
+
+Follow these steps to run the project locally:
+
+```bash
+# Clone the repository
+git clone https://github.com/your-username/coinradar.git
+
+# Navigate to the project directory
+cd coinradar
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+```
