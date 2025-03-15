@@ -65,3 +65,53 @@
   cursor: pointer;
   font-weight: 800;
 }
+
+.crypto-table {
+  max-width: 80rem;
+  margin: auto;
+  background: linear-gradient(rgba(84, 3, 255, 0.15), rgba(105, 2, 153, 0.15));
+  border-radius: 1.5rem;
+  -webkit-border-radius: 1.5rem;
+  -moz-border-radius: 1.5rem;
+  -ms-border-radius: 1.5rem;
+  -o-border-radius: 1.5rem;
+}
+
+.crypto-table-layout {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 1fr 1fr 1.5fr;
+  padding: 1.5rem 2rem;
+  align-items: center;
+  border-bottom: 1px solid #3c3c3c;
+  font-size: 1.4rem;
+}
+
+.table-change {
+  text-align: center;
+}
+
+.table-market-cap {
+  text-align: right;
+}
+
+.table-layout:last-child {
+  border: none;
+}
+
+.table-coin-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.table-coin-image {
+  width: 35px;
+}
+
+.green-color {
+  color: #00d515;
+}
+
+.red-color {
+  color: #ff4646;
+}
