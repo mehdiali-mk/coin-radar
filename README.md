@@ -36,21 +36,21 @@
 ### 🔹 Fold Website View
 
 <p align="center">
-  <img src="./src/assets/Fold-Image.png" width="60%">
+  <img src="./src/assets/Fold-Image.png" width="30%">
 </p>
 <p align="center"><i>Fold Website View</i></p>
 
 ### 🔹 iPad Website View
 
 <p align="center">
-  <img src="./src/assets/Ipad-Image.png" width="60%">
+  <img src="./src/assets/Ipad-Image.png" width="30%">
 </p>
 <p align="center"><i>iPad Website View</i></p>
 
 ### 🔹 iPhone Website View
 
 <p align="center">
-  <img src="./src/assets/Iphone-Image.png" width="60%">
+  <img src="./src/assets/Iphone-Image.png" width="30%">
 </p>
 <p align="center"><i>iPhone Website View</i></p>
 
