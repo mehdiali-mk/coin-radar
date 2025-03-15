@@ -21,6 +21,7 @@
 
 .nav-item {
   cursor: pointer;
+  font-weight: 700;
 }
 
 .nav-right {

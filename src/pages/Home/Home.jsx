@@ -1,12 +1,31 @@
 import React, { useContext, useEffect, useRef, useState } from "react";
 import "./Home.css";
 import { CoinContext } from "../../context/CoinContext";
+import { Link } from "react-router-dom";
 
 function Home() {
   const cryptoSearchEl = useRef(null);
 
   const { allCoin, currency } = useContext(CoinContext);
   const [displayCoin, setDisplayCoin] = useState([]);
+  const [inputSearch, setInputSearch] = useState("");
+
+  function handleInputSearch(event) {
+    setInputSearch(event.target.value);
+    if (event.target.value === "") {
+      setDisplayCoin(allCoin);
+    }
+  }
+
+  function searchHandler(event) {
+    event.preventDefault();
+    const searchedCoin = allCoin.filter((coin) =>
+      coin.name.toLowerCase().includes(inputSearch.toLowerCase())
+    );
+    setDisplayCoin(searchedCoin);
+    setInputSearch("");
+    cryptoSearchEl.current.focus();
+  }
 
   useEffect(
     function () {
@@ -31,7 +50,12 @@ function Home() {
           explore more about cryptos.
         </p>
 
-        <form className="crypto-search-form">
+        <form
+          className="crypto-search-form"
+          onSubmit={(event) => {
+            searchHandler(event);
+          }}
+        >
           <input
             type="text"
             name="cryptoSearch"
@@ -39,7 +63,16 @@ function Home() {
             className="crypto-search-input"
             placeholder="Search for cryptos...."
             ref={cryptoSearchEl}
+            onChange={handleInputSearch}
+            list="coinDataList"
           />
+
+          <datalist id="coinDataList">
+            {allCoin.map((coin, index) => (
+              <option key={index} value={coin.name} />
+            ))}
+          </datalist>
+
           <button type="submit" className="crypto-search-button">
             Search
           </button>
@@ -55,7 +88,11 @@ function Home() {
           <p className="table-market-cap">Market Cap</p>
         </div>
         {displayCoin.slice(0, 10).map((item, index) => (
-          <div className="crypto-table-layout" key={index}>
+          <Link
+            to={`/coin/${item.id}`}
+            className="crypto-table-layout"
+            key={index}
+          >
             <p>{item.market_cap_rank}</p>
             <div className="table-coin-info">
               <img
@@ -81,7 +118,7 @@ function Home() {
             <p className="table-market-cap">
               {currency.symbol} {item.market_cap.toLocaleString()}
             </p>
-          </div>
+          </Link>
         ))}
       </div>
     </div>
